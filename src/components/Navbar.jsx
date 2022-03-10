@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
-const pages = ["Home", "AddAsset", "AllAssetS", "BranchAssetS", "Update"];
+const pages = ["Home", "Add_Asset", "All_AssetS", "Branch_Assets", "Update"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {

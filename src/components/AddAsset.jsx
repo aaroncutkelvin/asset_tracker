@@ -65,21 +65,23 @@ function AddAsset() {
         />
         <LocalizationProvider dateAdapter={AdapterDateFns}>
           <DesktopDatePicker
-            label="Date desktop"
+            label="Aquisition Date"
             inputFormat="MM/dd/yyyy"
             value={val}
             onChange={handleFix}
             renderInput={(params) => <TextField {...params} />}
           />
           <TimePicker
-            label="Time"
+            label="Aquisition Time"
             value={val}
             onChange={handleFix}
             renderInput={(params) => <TextField {...params} />}
           />
         </LocalizationProvider>
         <FormControl sx={{ m: 4 }}>
-          <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
+          <InputLabel htmlFor="outlined-adornment-amount">
+            Asset Cost
+          </InputLabel>
           <OutlinedInput
             id="outlined-adornment-amount"
             value={values.amount}
@@ -93,7 +95,7 @@ function AddAsset() {
           label="Asset Description"
           multiline
           rows={4}
-          defaultValue="Default Value"
+          defaultValue=""
         />
       </div>
     </Box>
